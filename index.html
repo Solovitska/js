@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Мета-теги для кодування символів та видимості області перегляду -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Заголовок сторінки -->
     <title>matrix</title>
     
+    <!-- Посилання на зовнішній таблиці стилів -->
+    
     <script type="module" crossorigin src="/js/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js/assets/index-d5741fb4.css">
+    <link rel="stylesheet" href="/js/assets/index-6f588d63.css">
   </head>
   <body>
+    <!-- Елемент canvas для ефекту матриці -->
     <canvas class="matrix"></canvas>
     
+    <!-- Тег script із посиланням на головний файл JavaScript -->
+    
+
+    <!-- Блок для виведення зафіксованої дати та часу -->
+    <div id="fixedDateTime"></div>
+
+    <!-- Скрипт для зафіксування та виведення дати та часу -->
+    <script>
+      // Зафіксована дата та час на момент завантаження сторінки
+      const fixedDate = new Date();
+      
+      // Отримання рядка з зафіксованою датою та часом
+      const fixedDateTimeString = fixedDate.toLocaleString();
+      
+      // Вивід рядка у відповідний блок HTML
+      const fixedDateTimeElement = document.getElementById("fixedDateTime");
+      fixedDateTimeElement.textContent = `Зафіксована дата і час: ${fixedDateTimeString}`;
+    </script>
+
+    <!-- Блок для нового тексту та посилання -->
+    <div id="newContent">
+      <p>Це новий контент на вашій сторінці!</p>
+      <a href="https://www.example.com" target="_blank">Посилання на приклад</a>
+    </div>
   </body>
 </html>
