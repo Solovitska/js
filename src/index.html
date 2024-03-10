@@ -34,23 +34,23 @@
       fixedDateTimeElement.textContent = `Зафіксована дата і час: ${fixedDateTimeString}`;
     </script>
 
-    <!-- Блок для нового креативного тексту та посилання -->
+    <!-- Блок для нового  тексту та посилання -->
     <div id="newContent">
       <p id="creativeText">Ласкаво просимо в захопливий світ коду та імпровізації!</p>
       <p>Ваш майбутній час, як матриця, розтає на сторінці, віддзеркалюючи симфонію бітів та байтів.</p>
       <p>Дозвольте вашому творчому духу завладарювати цим цифровим простором.</p>
       <a href="https://www.example.com" target="_blank">Дізнайтеся більше</a>
     </div>
+<!-- Скрипт для затримки перед видаленням тексту -->
+<script>
+  // Отримання елемента з креативним текстом
+  const creativeTextElement = document.getElementById("creativeText");
 
-    <!-- Скрипт для затримки перед видаленням тексту -->
-    <script>
-      // Отримання елемента з креативним текстом
-      const creativeTextElement = document.getElementById("creativeText");
-
-      // Затримка перед видаленням тексту (наприклад, 2хв)
-      setTimeout(() => {
-        creativeTextElement.textContent = ''; // Порожній текст
-      }, 120000);
-    </script>
+  // Затримка перед видаленням тексту (5 хвилин)
+  setTimeout(() => {
+    creativeTextElement.textContent = ''; // Порожній текст
+  }, 5 * 60 * 1000);
+</script>
+    
   </body>
 </html>
