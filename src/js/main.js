@@ -1,3 +1,4 @@
+'use strict';
 // Вибираємо елемент canvas за класом "matrix"
 const canvasEl = document.querySelector(".matrix");
 
